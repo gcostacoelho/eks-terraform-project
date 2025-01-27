@@ -9,3 +9,8 @@ variable "cidr_block_vpc" {
     error_message = "This format is not valid"
   }
 }
+
+variable "projectName" {
+  type        = string
+  description = "Variable to be used in aws resources (Name tag)"
+}
