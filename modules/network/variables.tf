@@ -1,5 +1,3 @@
-# VPC Variables
-
 variable "cidr_block_vpc" {
   type        = string
   description = "Networking CIDR block to be used for the VPC"
@@ -13,4 +11,9 @@ variable "cidr_block_vpc" {
 variable "projectName" {
   type        = string
   description = "Variable to be used in aws resources (Name tag)"
+}
+
+variable "tags" {
+  type        = map(any)
+  description = "Tags to be added in AWS resources"
 }
