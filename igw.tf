@@ -9,7 +9,7 @@ resource "aws_internet_gateway" "igw" {
   )
 }
 
-resource "aws_route_table" "eks-public-rtb" {
+resource "aws_route_table" "eks_public_rtb" {
   vpc_id = aws_vpc.eks_vpc.id
 
   route {
