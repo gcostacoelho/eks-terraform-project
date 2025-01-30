@@ -14,10 +14,3 @@ variable "cidr_block_vpc" {
     error_message = "This format is not valid"
   }
 }
-
-
-# EKS Variables
-variable "eks_policy_arn" {
-  type        = string
-  description = "The ARN identity from the police"
-}
