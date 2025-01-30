@@ -1,5 +1,10 @@
-# VPC Variables
+# Global Variables
+variable "projectName" {
+  type        = string
+  description = "Variable to be used in aws resources (Name tag)"
+}
 
+# VPC Variables
 variable "cidr_block_vpc" {
   type        = string
   description = "Networking CIDR block to be used for the VPC"
@@ -10,7 +15,9 @@ variable "cidr_block_vpc" {
   }
 }
 
-variable "projectName" {
+
+# EKS Variables
+variable "eks_policy_arn" {
   type        = string
-  description = "Variable to be used in aws resources (Name tag)"
+  description = "The ARN identity from the police"
 }
