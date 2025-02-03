@@ -23,3 +23,9 @@ module "eks_managed_node_group" {
   ])
   tags = local.tags
 }
+
+module "eks_load_balancer" {
+  source      = "./modules/load-balancer-controller"
+  projectName = var.projectName
+  tags        = local.tags
+}
