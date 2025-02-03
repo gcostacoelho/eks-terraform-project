@@ -12,3 +12,8 @@ variable "oidc_url" {
   type        = string
   description = "URL OIDC provider to be used in IAM Role"
 }
+
+variable "cluster_name" {
+  type = string
+  description = "EKS Cluster name"
+}
