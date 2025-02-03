@@ -1,5 +1,9 @@
+# VS Files
+.vscode
+
 # Local .terraform directories
 **/.terraform/*
+.terraform.lock.hcl
 
 # .tfstate files
 *.tfstate
