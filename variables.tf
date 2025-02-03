@@ -14,3 +14,14 @@ variable "cidr_block_vpc" {
     error_message = "This format is not valid"
   }
 }
+
+variable "region" {
+  type        = string
+  description = "AWS region to create resources"
+
+}
+
+variable "tags" {
+  type = map
+  description = "Map of tags to be addes in AWS resources"
+}
