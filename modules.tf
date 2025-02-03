@@ -29,5 +29,6 @@ module "eks_load_balancer" {
   projectName  = var.projectName
   oidc_url     = module.eks_cluster.oidc
   cluster_name = module.eks_cluster.cluster_name
+  vpc_id       = module.eks_network_module.vpc_id
   tags         = var.tags
 }
