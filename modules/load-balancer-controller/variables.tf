@@ -14,6 +14,6 @@ variable "oidc_url" {
 }
 
 variable "cluster_name" {
-  type = string
+  type        = string
   description = "EKS Cluster name"
 }
