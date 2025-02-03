@@ -7,3 +7,8 @@ variable "tags" {
   type        = map(any)
   description = "Tags to be added in AWS resources"
 }
+
+variable "oidc_url" {
+  type        = string
+  description = "URL OIDC provider to be used in IAM Role"
+}
